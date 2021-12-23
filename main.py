@@ -1,3 +1,6 @@
+#discord bot-Olive 
+# -Suhas M L
+
 import discord
 #os is imported cos of key of bot
 import os
