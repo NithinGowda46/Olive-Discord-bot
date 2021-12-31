@@ -106,27 +106,7 @@ async def on_message(msg):
   if msg.content.startswith("$commands"):
     await msg.channel.send("1. $hello: Returns a hello message\n2. $quote: Returns a quote\n3. $pun: Returns a pun\n4. $meaning \'word\': Returns the meaning of the given word\n5. $new \'message\': Adds the entered message into the database")
 
-  def w(s):
-    if(s==1):
-      word = random.choice(["iron man",'hulk','thor','wanda','vision','tonystark','captain america','spiderman','blackwidow','thanos','ultron',"falcon","wintersoldier","scarlett witch","loki",'shang chi',"venom"])
-      return word
-    elif(s==4):
-      word = random.choice(['operating system','network','algorithm','firewall','java','keyboard','linux','motherboard','teminal','windows'])
-      return word
-    elif(s==3):
-      word = random.choice(['athletics','basketball','baseball','badminton','cricket','football','gymnastics','hockey','olympics','rugby','table tennis'])
-      return word
-    elif(s==2):
-      word = random.choice(['afghanistan','australia','brazil','china','canada','denmark','france','india','italy','japan','malaysia','united states of america'])
-      return word
-    else:
-      return
-
-  #hangman
-
-  if msg.content.startswith("$hangman"):
-    await msg.channel.send("Guess the word in 10 attempts")
-    game1()
+  
   
   if db["responding"]:
     encouragements = [
